@@ -1,5 +1,5 @@
-from book import Book
-from user import User
+from Book import Book
+from User import User
 
 
 class Order:
