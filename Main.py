@@ -1,4 +1,3 @@
-
 while True:
     try:
         a = input("inserire a:")
@@ -6,8 +5,17 @@ while True:
     except:
         print("errore")
 operatore = input("che operazione vuoi fare")
+while True:
+    try:
+        b = input("inserire b:")
+        break
+    except:
+        print("errore")
 match operatore:
-    case '+'
     case '*': 
-        risultato = a * a
-        print(risultato)
+        risultato = a * b
+    case '+':
+        risultato=a+b
+    case _:
+        print("errore")
+print(risultato)
