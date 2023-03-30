@@ -8,3 +8,6 @@ while True:
 operatore = input("che operazione vuoi fare")
 match operatore:
     case '+'
+    case '*': 
+        risultato = a * a
+        print(risultato)
