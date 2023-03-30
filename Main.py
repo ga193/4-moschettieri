@@ -4,16 +4,10 @@ while True:
     while True:
         try:
             a = float(input("inserire a:"))
-            break
-        except:
-            print("errore")
-    while True:
-        try:
             b = float(input("inserire b:"))
             break
         except:
-            print("errore")
-    
+            print("errore")    
     operatore = input("che operazione vuoi fare")
     match operatore:
         case '*': 
