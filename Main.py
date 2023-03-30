@@ -12,7 +12,10 @@ while True:
     except:
         print("errore")
 match operatore:
+    case '*': 
+        risultato = a * b
     case '+':
-        a=a+b
+        risultato=a+b
     case _:
         print("errore")
+print(risultato)
