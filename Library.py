@@ -16,17 +16,17 @@ class Gestionelibri:
         self.__ordini.append(input)
 
     def add_libri_disponibili(self, input):
-        self.__ordini(input)
+        self.__ordini.append(input)
 
-    def cerca_libri(self, targa):
+    def cerca_libri(self, Book.Get_nome):
         for i, libri in enumerate(self.__elenco):
-            if libri.get_targa() == targa:
+            if libri.get_Book.Get_nome() == Book.Get_nome():
                 print("in posizione", i+1, libri)
 
-    def cancella_libri(self, targa):
+    def cancella_libri(self, Book.Get_nome()):
         flag = 0
         for libri in self.__elenco:
-            if libri.get_targa() == targa:
+            if libri.get_Book.Get_nome()() == Book.Get_nome():
                 self.__elenco.remove(libri)
                 flag = 1
         if flag == 0:
@@ -49,4 +49,4 @@ class Gestionelibri:
         print("il costo totale delle auto e di:", costo)
 
     def ordina_libri(self):
-        self.__elenco.sort(key=lambda immobile: immobile.get_targa())
+        self.__elenco.sort(key=lambda immobile: immobile.get_Book.Get_nome()())
