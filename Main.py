@@ -1,21 +1,26 @@
+risultato = "errore"
+
 while True:
-    try:
-        a = input("inserire a:")
-        break
-    except:
-        print("errore")
-operatore = input("che operazione vuoi fare")
-while True:
-    try:
-        b = input("inserire b:")
-        break
-    except:
-        print("errore")
-match operatore:
-    case '*': 
-        risultato = a * b
-    case '+':
-        risultato=a+b
-    case _:
-        print("errore")
-print(risultato)
+    while True:
+        try:
+            a = float(input("inserire a:"))
+            b = float(input("inserire b:"))
+            break
+        except:
+            print("errore")    
+    operatore = input("che operazione vuoi fare")
+    match operatore:
+        case '*': 
+            risultato = a * b
+        case '-': 
+            risultato = a - b
+        case '+':
+            risultato=a+b
+        case '/': 
+            try:
+                risultato = a / b
+            except:
+                print("errore inserisci un divisore maggiore di 0")
+        case _:
+            print("errore\nPerfavore inserisci esclusivamente '+' '-' '*' o '/' ")
+    print(risultato)
